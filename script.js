@@ -42,7 +42,6 @@ Requirements: ${data.message}`
     window.location.href = `mailto:${CONFIG.email}?subject=${subject}&body=${body}`;
   });
 }
-document.addEventListener(...)
 document.addEventListener("DOMContentLoaded",function(){
 
 const btn=document.querySelector(".mobile-toggle");
