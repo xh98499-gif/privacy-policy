@@ -19,7 +19,7 @@ document.querySelectorAll("[data-whatsapp]").forEach(el=>{
     openWhatsApp("Hello Chebubu Auto, I would like to request a quotation.");
   });
 });
-
+  
 const form = document.getElementById("quoteForm");
 if(form){
   form.addEventListener("submit",(e)=>{
@@ -42,3 +42,20 @@ Requirements: ${data.message}`
     window.location.href = `mailto:${CONFIG.email}?subject=${subject}&body=${body}`;
   });
 }
+document.addEventListener(...)
+document.addEventListener("DOMContentLoaded",function(){
+
+const btn=document.querySelector(".mobile-toggle");
+const nav=document.querySelector(".nav-links");
+
+if(btn && nav){
+
+btn.addEventListener("click",function(){
+
+nav.classList.toggle("active");
+
+});
+
+}
+
+});
