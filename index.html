@@ -20,7 +20,31 @@
 <section class="light" id="contact"><div class="container quote"><div><span class="kicker">Request a Quotation</span><h2>Tell Us What You Need</h2><p>Include your country, preferred brand or model, budget and purchase quantity for a faster quotation.</p><p><strong>Company</strong><br>Guangzhou Chebubu Auto Technology Co., Ltd.</p><p><strong>Email</strong><br>xh98499@gmail.com</p><p><strong>Location</strong><br>Guangzhou, Guangdong, China</p></div><form id="form"><input id="name" placeholder="Your name" required><input id="country" placeholder="Destination country" required><select id="type" required><option value="">Buyer type</option><option>Personal Use</option><option>Car Dealer</option><option>Import Company</option><option>Fleet Purchase</option></select><input id="budget" placeholder="Budget (USD)"><input id="product" class="full" placeholder="Vehicle brand/model or auto part"><textarea id="message" placeholder="Quantity, year, fuel type and other requirements"></textarea><button class="btn primary full" type="submit">Send Inquiry by Email</button></form></div></section>
 <footer><div class="container"><div class="foot"><div><a class="brand" href="#home" style="color:#fff"><span class="logo">CBB</span><span>CHEBUBU AUTO<small style="color:#91a5b7">GLOBAL VEHICLE SUPPLY</small></span></a><p>Vehicle export and OEM auto parts supply from Guangzhou, China.</p></div><div><h4>Services</h4><a href="#vehicles">Vehicle Export</a><a href="#parts">OEM Auto Parts</a><a href="#process">Export Process</a></div><div><h4>Company</h4><a href="#about">About Us</a><a href="#contact">Contact</a><a href="privacy-policy.html">Privacy Policy</a></div></div><div class="copy">© 2026 Guangzhou Chebubu Auto Technology Co., Ltd. All Rights Reserved.</div></div></footer>
 <script>
-const WHATSAPP_NUMBER="85267681019";
+<script>
+
+document.querySelectorAll(".whatsapp").forEach(btn=>{
+btn.onclick=function(){
+
+let phone = prompt(
+"Please select WhatsApp number:\n1 Hong Kong Office\n2 China Office"
+);
+
+if(phone=="1"){
+window.open(
+"https://wa.me/85267681019?text=Hello%20Chebubu%20Auto"
+);
+}
+
+if(phone=="2"){
+window.open(
+"https://wa.me/8617575453584?text=Hello%20Chebubu%20Auto"
+);
+}
+
+}
+});
+
+</script>
 for(const a of document.querySelectorAll('.whatsapp'))a.onclick=e=>{if(WHATSAPP_NUMBER){e.preventDefault();window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Hello Chebubu Auto, I would like a vehicle quotation.'),'_blank')}};
 document.getElementById('form').onsubmit=e=>{e.preventDefault();const body=`Name: ${name.value}\nCountry: ${country.value}\nBuyer Type: ${type.value}\nBudget: ${budget.value}\nVehicle / Part: ${product.value}\nRequirements: ${message.value}`;location.href='mailto:xh98499@gmail.com?subject='+encodeURIComponent('Vehicle / Auto Parts Inquiry - Chebubu Auto')+'&body='+encodeURIComponent(body)};
 </script>
