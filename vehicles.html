@@ -7,625 +7,76 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vehicles | Chebubu Auto</title>
+<title>Vehicle Center | Chebubu Auto</title>
 
 
 <style>
-
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
-}
-
-
-body{
-color:#1c2a38;
-background:#f7f8fa;
-}
-
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-
-
-/* top */
-
-.top{
-background:#071a2e;
-color:white;
-padding:12px;
-}
-
-
-
-/* nav */
-
-
-nav{
-
-height:75px;
-background:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-}
-
-
-.logo{
-
-font-size:26px;
-font-weight:bold;
-color:#f28c28;
-
-}
-
-
-.logo span{
-
-color:#071a2e;
-
-}
-
-
-nav a{
-
-margin-left:20px;
-text-decoration:none;
-color:#222;
-
-}
-
-
-
-/* banner */
-
-
-.banner{
-
-height:350px;
-
-background:
-
-linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.55)
-),
-
-url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7")
-center/cover;
-
-
-display:flex;
-align-items:center;
-color:white;
-
-}
-
-
-.banner h1{
-
-font-size:45px;
-
-}
-
-
-
-/* brand */
-
-
-.section{
-
-padding:60px 0;
-
-}
-
-
-.title{
-
-text-align:center;
-font-size:36px;
-margin-bottom:40px;
-
-}
-
-
-
-.brand-box{
-
-display:grid;
-grid-template-columns:repeat(6,1fr);
-gap:15px;
-
-}
-
-
-.brand{
-
-background:white;
-padding:20px;
-text-align:center;
-border-radius:10px;
-box-shadow:0 5px 20px #ddd;
-
-}
-
-
-
-/* cars */
-
-
-.cars{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-
-}
-
-
-
-.car{
-
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 10px 25px #ddd;
-
-}
-
-
-.car img{
-
-width:100%;
-height:220px;
-object-fit:cover;
-
-}
-
-
-.car div{
-
-padding:20px;
-
-}
-
-
-.car h3{
-
-margin-bottom:10px;
-
-}
-
-
-
-.btn{
-
-display:inline-block;
-background:#f28c28;
-color:white;
-padding:12px 25px;
-border-radius:25px;
-text-decoration:none;
-
-}
-
-
-
-
-/* whatsapp */
-
-
-.whatsapp{
-
-position:fixed;
-
-right:25px;
-
-bottom:25px;
-
-background:#25D366;
-
-width:65px;
-
-height:65px;
-
-border-radius:50%;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-z-index:999;
-
-
-}
-
-
-.whatsapp img{
-
-width:38px;
-
-}
-
-
-
-footer{
-
-background:#071a2e;
-color:white;
-padding:30px;
-text-align:center;
-
-}
-
-
-
-@media(max-width:800px){
-
-.cars{
-
-grid-template-columns:1fr;
-
-}
-
-.brand-box{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-
-</style>
-
-
-</head>
-
-
-<body>
-
-
-<div class="top">
-
-Guangzhou, China | Global Vehicle Export & OEM Auto Parts Supply
-
-</div>
-
-
-
-<nav class="container">
-
-
-<div class="logo">
-
-CBB <span>Chebubu Auto</span>
-
-</div>
-
-
-<div>
-
-<a href="index.html">Home</a>
-
-<a href="vehicles.html">Vehicles</a>
-
-<a href="parts.html">Auto Parts</a>
-
-<a href="process.html">Export Process</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-
-</nav>
-
-
-
-
-
-<section class="banner">
-
-
-<div class="container">
-
-
-<h1>
-Global Vehicle Export Center
-</h1>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h2 class="title">
-
-Popular Brands
-
-</h2>
-
-
-<div class="brand-box">
-
-
-<div class="brand">Toyota</div>
-
-<div class="brand">Honda</div>
-
-<div class="brand">Mercedes-Benz</div>
-
-<div class="brand">BYD</div>
-
-<div class="brand">Changan</div>
-
-<div class="brand">JETOUR</div>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-
-
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h2 class="title">
-
-Featured Vehicles
-
-</h2>
-
-
-
-<div class="cars">
-
-
-
-<div class="car">
-
-<img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2">
-
-<div>
-
-<h3>Toyota Corolla</h3>
-
-<p>
-Year: 2018-2024
-<br>
-Fuel: Gasoline
-<br>
-Drive: Left Hand Drive
-</p>
-
-<br>
-
-<a class="btn"
-href="https://wa.me/8617575453584">
-
-Get Quote
-
-</a>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="car">
-
-<img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d">
-
-<div>
-
-<h3>Toyota RAV4</h3>
-
-<p>
-SUV
-<br>
-Fuel / Hybrid
-<br>
-Export Available
-</p>
-
-<br>
-
-<a class="btn"
-href="https://wa.me/8617575453584">
-
-Get Quote
-
-</a>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="car">
-
-
-<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
-
-
-<div>
-
-<h3>BYD Electric Vehicle</h3>
-
-<p>
-New Energy Vehicle
-<br>
-China EV Supply
-<br>
-Global Export
-</p>
-
-
-<br>
-
-
-<a class="btn"
-href="https://wa.me/8617575453584">
-
-Get Quote
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<a class="whatsapp"
-href="https://wa.me/8617575453584"
-target="_blank">
-
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
-
-</a>
-
-
-
-
-<footer>
-
-Guangzhou Chebubu Auto Technology Co., Ltd.
-
-<br><br>
-
-Vehicle Export | OEM Auto Parts
-
-</footer>
-
-
-
-</body>
-
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Vehicle Center | Chebubu Auto</title>
-
-<style>
-
-*{
-box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
 }
 
+
 body{
-margin:0;
-background:#f5f7fa;
-color:#152238;
+background:#f5f7fb;
+color:#12243a;
 }
 
 
 .top{
+
 background:#071a2e;
 color:white;
-padding:12px 40px;
+padding:12px 6%;
 font-size:14px;
+
 }
 
 
 .nav{
+
 height:75px;
 background:white;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:0 10%;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
+padding:0 8%;
+box-shadow:0 2px 10px #ddd;
+
 }
 
 
 .logo{
+
 font-size:26px;
 font-weight:bold;
+
 }
+
 
 .logo span{
+
 color:#f28c28;
+
 }
 
 
-.menu a{
-margin-left:30px;
+.nav a{
+
 text-decoration:none;
+margin-left:25px;
 color:#333;
-}
 
+}
 
 
 .banner{
 
-height:300px;
+height:320px;
+
 background:
 linear-gradient(
 rgba(0,0,0,.65),
@@ -641,6 +92,7 @@ align-items:center;
 justify-content:center;
 
 color:white;
+
 font-size:42px;
 font-weight:bold;
 
@@ -656,20 +108,34 @@ margin:auto;
 }
 
 
+
 .title{
 
 text-align:center;
 font-size:38px;
-margin:60px 0 30px;
+margin:60px 0 35px;
+font-weight:bold;
 
 }
 
 
 
-.brands{
+.category{
+
+font-size:24px;
+margin:35px 0 20px;
+font-weight:bold;
+
+}
+
+
+.brand-grid{
 
 display:grid;
-grid-template-columns:repeat(6,1fr);
+
+grid-template-columns:
+repeat(6,1fr);
+
 gap:20px;
 
 }
@@ -678,11 +144,19 @@ gap:20px;
 .brand{
 
 background:white;
+
 padding:25px;
+
 text-align:center;
+
 border-radius:12px;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.08);
+
 cursor:pointer;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
 
 }
 
@@ -693,14 +167,567 @@ transform:translateY(-5px);
 
 }
 
+.category-title{
 
-
-.category{
-
-font-size:22px;
-margin-top:50px;
-margin-bottom:20px;
+font-size:24px;
 font-weight:bold;
+margin-top:45px;
+margin-bottom:20px;
 
 }
 
+
+
+.vehicle-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.vehicle{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+.vehicle img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+
+
+.vehicle-info{
+
+padding:20px;
+
+}
+
+
+
+.vehicle-info h3{
+
+font-size:22px;
+margin-bottom:15px;
+
+}
+
+
+
+.vehicle-info p{
+
+line-height:1.8;
+color:#666;
+
+}
+
+
+
+.quote-btn{
+
+display:inline-block;
+
+background:#f28c28;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:25px;
+
+text-decoration:none;
+
+margin-top:15px;
+
+}
+
+
+
+.whatsapp{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:#25d366;
+
+color:white;
+
+font-size:32px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+z-index:999;
+
+}
+
+
+
+footer{
+
+margin-top:80px;
+
+background:#071a2e;
+
+color:white;
+
+padding:35px;
+
+text-align:center;
+
+}
+
+
+
+@media(max-width:900px){
+
+.brand-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+
+.vehicle-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.nav{
+
+padding:0 20px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="top">
+
+Guangzhou China | Global Vehicle Export & OEM Auto Parts Supply
+
+</div>
+
+
+
+<div class="nav">
+
+<div class="logo">
+
+<span>CBB</span> Chebubu Auto
+
+</div>
+
+
+<div>
+
+<a href="index.html">Home</a>
+
+<a href="vehicles.html">Vehicles</a>
+
+<a href="parts.html">Auto Parts</a>
+
+<a href="process.html">Export Process</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</div>
+
+
+
+<div class="banner">
+
+Global Vehicle Export Center
+
+</div>
+
+
+
+<div class="container">
+
+
+<div class="title">
+
+Popular Brands
+
+</div>
+
+
+<div class="category-title">
+Japanese Brands
+</div>
+
+
+<div class="brand-grid">
+
+<div class="brand">Toyota</div>
+
+<div class="brand">Honda</div>
+
+<div class="brand">Nissan</div>
+
+<div class="brand">Lexus</div>
+
+<div class="brand">Mazda</div>
+
+<div class="brand">Mitsubishi</div>
+
+<div class="brand">Suzuki</div>
+
+<div class="brand">Subaru</div>
+
+</div>
+
+
+
+<div class="category-title">
+German Brands
+</div>
+
+
+<div class="brand-grid">
+
+<div class="brand">Mercedes-Benz</div>
+
+<div class="brand">BMW</div>
+
+<div class="brand">Audi</div>
+
+<div class="brand">Volkswagen</div>
+
+<div class="brand">Porsche</div>
+
+
+</div>
+
+
+
+<div class="category-title">
+Chinese Brands
+</div>
+
+
+<div class="brand-grid">
+
+
+<div class="brand">BYD</div>
+
+<div class="brand">Changan</div>
+
+<div class="brand">JETOUR</div>
+
+<div class="brand">Geely</div>
+
+<div class="brand">Chery</div>
+
+<div class="brand">GWM</div>
+
+<div class="brand">Haval</div>
+
+<div class="brand">MG</div>
+
+<div class="brand">NIO</div>
+
+<div class="brand">XPeng</div>
+
+<div class="brand">Li Auto</div>
+
+
+</div>
+
+
+<div class="category-title">
+Korean & American Brands
+</div>
+
+
+<div class="brand-grid">
+
+
+<div class="brand">Hyundai</div>
+
+<div class="brand">Kia</div>
+
+<div class="brand">Genesis</div>
+
+<div class="brand">Tesla</div>
+
+<div class="brand">Ford</div>
+
+<div class="brand">Chevrolet</div>
+
+
+</div><!-- Featured Vehicles -->
+
+<div class="title">
+
+Featured Vehicles
+
+</div>
+
+
+<div class="vehicle-grid">
+
+
+<div class="vehicle">
+
+<img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
+
+
+<div class="vehicle-info">
+
+<h3>Toyota Corolla</h3>
+
+<p>
+Year: 2018-2025<br>
+Fuel / Hybrid Available<br>
+Transmission: CVT / AT<br>
+Left Hand Drive<br>
+Worldwide Export
+</p>
+
+
+<a class="quote-btn" href="contact.html">
+Get Quote
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<div class="vehicle">
+
+<img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6">
+
+
+<div class="vehicle-info">
+
+<h3>Toyota RAV4</h3>
+
+<p>
+SUV Model<br>
+Fuel / Hybrid<br>
+Family & Business Use<br>
+Export Ready
+</p>
+
+
+<a class="quote-btn" href="contact.html">
+Get Quote
+</a>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="vehicle">
+
+<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
+
+
+<div class="vehicle-info">
+
+<h3>BYD Electric Vehicle</h3>
+
+<p>
+New Energy Vehicle<br>
+EV Export Supply<br>
+Battery Information Available<br>
+China EV Source
+</p>
+
+
+<a class="quote-btn" href="contact.html">
+Get Quote
+</a>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="vehicle">
+
+<img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb">
+
+
+<div class="vehicle-info">
+
+<h3>JETOUR Traveller</h3>
+
+<p>
+SUV<br>
+Gasoline / Hybrid<br>
+China New Vehicle<br>
+Export Support
+</p>
+
+
+<a class="quote-btn" href="contact.html">
+Get Quote
+</a>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="vehicle">
+
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+
+
+<div class="vehicle-info">
+
+<h3>Changan CS75 PLUS</h3>
+
+<p>
+SUV Model<br>
+Fuel Vehicle<br>
+Competitive Export Price
+</p>
+
+
+<a class="quote-btn" href="contact.html">
+Get Quote
+</a>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="vehicle">
+
+<img src="https://images.unsplash.com/photo-1563720223185-11003d516935">
+
+
+<div class="vehicle-info">
+
+<h3>Mercedes-Benz</h3>
+
+<p>
+Luxury Vehicle<br>
+Used & New Cars<br>
+Global Export
+</p>
+
+
+<a class="quote-btn" href="contact.html">
+Get Quote
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<!-- WhatsApp Floating Button -->
+
+
+<a class="whatsapp"
+
+href="https://wa.me/85267681019"
+
+target="_blank">
+
+☎
+
+</a>
+
+
+
+<footer>
+
+Chebubu Auto<br><br>
+
+Global Vehicle Export & OEM Auto Parts Supply<br>
+
+Guangzhou, China<br><br>
+
+Hong Kong WhatsApp: +852 6768 1019<br>
+
+China WhatsApp: +86 17575453584
+
+</footer>
+
+
+
+</body>
+
+</html>
