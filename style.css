@@ -26,8 +26,8 @@ body{
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 .logo-img{
-    width:120px;
-    height:60px;
+    width:45px;
+    height:45px;
     object-fit:contain;
 }
 .container{width:min(1180px,calc(100% - 40px));margin:auto}
@@ -239,4 +239,40 @@ footer a:hover{color:#ffb15a}
   form{grid-template-columns:1fr}
   textarea,.full{grid-column:auto}
   .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+    line-height:1.15;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.hero{
+    min-height:650px;
+    padding:40px 20px;
+}
+.btn{
+    width:100%;
+    max-width:300px;
+}
+
+.logo-img{
+    width:45px;
+    height:45px;
+}
+
+.brand-title{
+    font-size:20px;
+}
+
+.mobile-toggle{
+    display:block;
+}
+
+.nav-links{
+    display:none;
 }
