@@ -7,11 +7,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chebubu Auto | Global Vehicle Export & OEM Auto Parts Supplier</title>
-
+<title>Chebubu Auto | Global Vehicle Export & OEM Auto Parts</title>
 
 <style>
-
 
 *{
 margin:0;
@@ -20,97 +18,87 @@ box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
 }
 
-
 body{
-color:#1c2a38;
+color:#152238;
 background:#fff;
 }
 
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+header{
 
-
-/* top */
-
-.top{
-background:#071a2e;
-color:white;
-padding:12px;
-font-size:14px;
-}
-
-
-nav{
-
-height:75px;
+height:80px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+padding:0 8%;
 background:white;
+box-shadow:0 2px 10px #ddd;
 
 }
 
 
 .logo{
 
-font-size:25px;
+display:flex;
+align-items:center;
+font-size:22px;
 font-weight:bold;
-color:#f28c28;
 
 }
 
 
-.logo span{
+.logo img{
 
-color:#071a2e;
+width:55px;
+margin-right:10px;
 
 }
 
 
-.menu a{
+nav a{
 
 margin-left:25px;
 text-decoration:none;
-color:#222;
+color:#152238;
+font-weight:600;
 
 }
-
-
-
-/* hero */
 
 
 .hero{
 
-height:600px;
+height:650px;
 
 background:
 
 linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.55)
+90deg,
+rgba(0,0,0,.75),
+rgba(0,0,0,.3)
 ),
 
-url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7")
-center/cover;
+url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
 
+background-size:cover;
+
+background-position:center;
 
 display:flex;
+
 align-items:center;
+
+padding-left:8%;
+
 color:white;
 
 }
 
 
-
 .hero h1{
 
-font-size:55px;
-max-width:700px;
+font-size:52px;
+
+max-width:650px;
 
 }
 
@@ -118,6 +106,7 @@ max-width:700px;
 .hero p{
 
 font-size:20px;
+
 margin:25px 0;
 
 }
@@ -126,40 +115,46 @@ margin:25px 0;
 .btn{
 
 display:inline-block;
-padding:15px 35px;
-background:#f28c28;
+
+background:#ff8a00;
+
 color:white;
+
+padding:15px 35px;
+
 border-radius:30px;
+
 text-decoration:none;
+
+font-weight:bold;
 
 }
 
 
-
-/* cards */
-
-
 .section{
 
-padding:70px 0;
+padding:70px 8%;
+
+text-align:center;
 
 }
 
 
 .title{
 
-text-align:center;
 font-size:36px;
+
 margin-bottom:40px;
 
 }
 
 
-
-.grid{
+.cards{
 
 display:grid;
+
 grid-template-columns:repeat(4,1fr);
+
 gap:25px;
 
 }
@@ -167,61 +162,40 @@ gap:25px;
 
 .card{
 
-padding:30px;
+padding:35px 20px;
+
+background:white;
+
+box-shadow:0 5px 20px #ddd;
+
 border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-text-align:center;
 
 }
-
-
-
-.card h3{
-
-margin:15px 0;
-
-}
-
-
-
-/* process */
 
 
 .process{
 
-background:#f5f7fa;
+display:grid;
+
+grid-template-columns:repeat(5,1fr);
+
+gap:20px;
 
 }
 
 
 .step{
 
-display:flex;
-justify-content:space-around;
-text-align:center;
+padding:30px;
+
+background:#f5f7fa;
+
+border-radius:15px;
 
 }
 
 
-.step div{
-
-width:20%;
-
-}
-
-
-.step strong{
-
-font-size:35px;
-color:#f28c28;
-
-}
-
-
-/* whatsapp */
-
-
-.whatsapp-float{
+.whatsapp{
 
 position:fixed;
 
@@ -229,11 +203,13 @@ right:25px;
 
 bottom:25px;
 
+background:#25D366;
+
+color:white;
+
 width:65px;
 
 height:65px;
-
-background:#25D366;
 
 border-radius:50%;
 
@@ -243,44 +219,88 @@ align-items:center;
 
 justify-content:center;
 
-z-index:9999;
+font-size:30px;
 
-box-shadow:0 5px 20px #555;
-
-}
-
-
-.whatsapp-float img{
-
-width:38px;
+text-decoration:none;
 
 }
 
 
 footer{
 
-background:#071a2e;
+background:#07182d;
+
 color:white;
-padding:30px;
+
+padding:40px;
+
 text-align:center;
 
 }
 
 
+/* 手机端 */
 
-@media(max-width:800px){
+@media(max-width:768px){
 
-.grid{
+
+header{
+
+padding:0 20px;
+
+}
+
+
+nav{
+
+display:none;
+
+}
+
+
+.logo img{
+
+width:45px;
+
+}
+
+
+.hero{
+
+height:520px;
+
+padding:30px;
+
+}
+
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+.cards{
 
 grid-template-columns:1fr;
 
 }
 
-.hero h1{
 
-font-size:35px;
+.process{
+
+grid-template-columns:1fr;
 
 }
+
+
+.section{
+
+padding:50px 20px;
+
+}
+
 
 }
 
@@ -294,26 +314,19 @@ font-size:35px;
 <body>
 
 
-<div class="top">
-
-Guangzhou, China | Global Vehicle Export & OEM Auto Parts Supply
-
-</div>
-
-
-
-<nav class="container">
+<header>
 
 
 <div class="logo">
 
-CBB <span>Chebubu Auto</span>
+<img src="logo.png">
+
+Chebubu Auto
 
 </div>
 
 
-
-<div class="menu">
+<nav>
 
 <a href="index.html">Home</a>
 
@@ -323,35 +336,31 @@ CBB <span>Chebubu Auto</span>
 
 <a href="process.html">Export Process</a>
 
-<a href="about.html">About</a>
-
 <a href="contact.html">Contact</a>
-
-</div>
-
 
 </nav>
 
 
+</header>
 
 
 
 <section class="hero">
 
 
-<div class="container">
+<div>
 
 
 <h1>
 
-Global Vehicle Export & OEM Auto Parts Supplier
+Global Vehicle Export Center
 
 </h1>
 
 
 <p>
 
-Reliable sourcing of new vehicles, used vehicles, EVs and OEM replacement parts from China.
+China Vehicle Export & OEM Auto Parts Supplier
 
 </p>
 
@@ -372,12 +381,7 @@ Get Vehicle Quote
 
 
 
-
-
 <section class="section">
-
-
-<div class="container">
 
 
 <h2 class="title">
@@ -388,28 +392,16 @@ Our Core Business
 
 
 
-<div class="grid">
+<div class="cards">
 
 
 <div class="card">
 
-<h3>🚗 New Vehicles</h3>
+🚗
 
-<p>
-Chinese brands, fuel vehicles and electric vehicles.
-</p>
+<h3>New Vehicles</h3>
 
-</div>
-
-
-
-<div class="card">
-
-<h3>🚘 Used Vehicles</h3>
-
-<p>
-Quality inspected vehicles ready for export.
-</p>
+<p>China brand vehicles supply worldwide.</p>
 
 </div>
 
@@ -417,11 +409,11 @@ Quality inspected vehicles ready for export.
 
 <div class="card">
 
-<h3>⚡ Electric Vehicles</h3>
+🚘
 
-<p>
-EV supply solutions for global markets.
-</p>
+<h3>Used Vehicles</h3>
+
+<p>Reliable inspected vehicles ready for export.</p>
 
 </div>
 
@@ -429,17 +421,26 @@ EV supply solutions for global markets.
 
 <div class="card">
 
-<h3>⚙ OEM Auto Parts</h3>
+⚡
 
-<p>
-Original quality replacement parts with OE support.
-</p>
+<h3>Electric Vehicles</h3>
+
+<p>EV supply solutions for global markets.</p>
+
+</div>
+
+
+
+<div class="card">
+
+⚙
+
+<h3>OEM Auto Parts</h3>
+
+<p>Original replacement parts supply.</p>
 
 </div>
 
-
-
-</div>
 
 </div>
 
@@ -448,150 +449,138 @@ Original quality replacement parts with OE support.
 
 
 
-
-
-
-
-<section class="section process">
-
-
-<div class="container">
+<section class="section" style="background:#f5f7fa">
 
 
 <h2 class="title">
 
-Export Process
+Vehicle Export Process
 
 </h2>
 
 
+<div class="process">
+
+
 <div class="step">
 
+01<br>
 
-<div>
-
-<strong>01</strong>
-
-<p>Inquiry</p>
+Inquiry
 
 </div>
 
 
+<div class="step">
 
-<div>
+02<br>
 
-<strong>02</strong>
-
-<p>Vehicle Selection</p>
-
-</div>
-
-
-
-<div>
-
-<strong>03</strong>
-
-<p>Inspection</p>
+Vehicle Selection
 
 </div>
 
 
+<div class="step">
 
-<div>
+03<br>
 
-<strong>04</strong>
-
-<p>Shipping</p>
-
-</div>
-
-
+Inspection
 
 </div>
 
 
+<div class="step">
+
+04<br>
+
+Export Documents
+
 </div>
+
+
+<div class="step">
+
+05<br>
+
+Shipping
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
 
 
+<section class="section">
+
+
+<h2 class="title">
+
+Why Choose Chebubu
+
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+Guangzhou China Supply Chain
+
+</div>
+
+
+<div class="card">
+
+Professional Inspection
+
+</div>
+
+
+<div class="card">
+
+Global Shipping Service
+
+</div>
+
+
+<div class="card">
+
+OEM Parts Support
+
+</div>
+
+
+</div>
+
+
+</section>
 
 
 
+<a class="whatsapp"
+href="https://wa.me/8617675453584">
 
-<a class="whatsapp-float"
-onclick="chooseWhatsApp()">
-
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
+☎
 
 </a>
 
 
 
-
-
-
 <footer>
 
+Guangzhou Chebubu Auto Technology Co.,Ltd
 
-Guangzhou Chebubu Auto Technology Co., Ltd.
+<br>
 
-
-<br><br>
-
-
-Vehicle Export | OEM Auto Parts | China Supplier
-
+Vehicle Export | OEM Auto Parts Supplier
 
 </footer>
-
-
-
-
-
-
-<script>
-
-
-function chooseWhatsApp(){
-
-
-let choice=prompt(
-
-"Select WhatsApp:\n1 Hong Kong Office\n2 China Office"
-
-);
-
-
-
-if(choice=="1"){
-
-window.open(
-"https://wa.me/85267681019"
-);
-
-}
-
-
-
-if(choice=="2"){
-
-window.open(
-"https://wa.me/8617675453584"
-);
-
-}
-
-
-}
-
-
-</script>
 
 
 
