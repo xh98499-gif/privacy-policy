@@ -25,6 +25,11 @@ body{
 }
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
+.logo-img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
 .container{width:min(1180px,calc(100% - 40px));margin:auto}
 .announcement{background:#04111f;color:#c6d1dc;font-size:13px}
 .announcement .container{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:20px}
