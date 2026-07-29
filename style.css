@@ -379,3 +379,46 @@ header{
 }
 
 }
+@media(max-width:768px){
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+}
+
+
+nav{
+    display:block;
+}
+
+
+.mobile-toggle{
+    display:block!important;
+    position:absolute;
+    right:15px;
+    top:15px;
+    font-size:32px;
+    z-index:99999;
+}
+
+
+.nav-links{
+    display:none;
+}
+
+
+.nav-links.active{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    right:15px;
+    top:60px;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    z-index:99999;
+}
+
+}
