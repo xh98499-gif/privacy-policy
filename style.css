@@ -281,13 +281,17 @@ footer a:hover{color:#ffb15a}
     box-shadow:0 10px 30px rgba(0,0,0,.15);
     z-index:999;
 }
-  .mobile-toggle{
+  ..mobile-toggle{
     display:block;
     background:none;
     border:0;
-    font-size:28px;
+    font-size:32px;
     color:#071522;
     cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    z-index:9999;
 }
 
 .hero h1{
@@ -336,4 +340,42 @@ z-index:999;
     border-radius:10px;
     box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
+@media(max-width:768px){
+
+header{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+
+.mobile-toggle{
+    display:block!important;
+    position:absolute;
+    right:20px;
+    top:20px;
+    font-size:32px;
+    z-index:9999;
+}
+
+
+.nav-links{
+    display:none;
+}
+
+
+.nav-links.active{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    right:20px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    z-index:9999;
+}
+
 }
